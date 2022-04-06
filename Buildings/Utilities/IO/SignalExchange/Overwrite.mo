@@ -4,6 +4,8 @@ block Overwrite "Block that allows a signal to overwritten by an FMU input"
 
   parameter String description "Description of the signal being overwritten";
 
+  parameter HaystackTags.PointFunctionType pointFunctionType = HaystackTags.PointFunctionType.None
+    "Tag for pointFunctionType" annotation(Dialog(tab="Haystack", group="Common Markers"));
   Modelica.Blocks.Logical.Switch swi
     "Switch between external signal and direct feedthrough signal"
     annotation (Placement(transformation(extent={{-10,-10},{10,10}})));

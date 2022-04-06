@@ -7,117 +7,140 @@ model WeatherStation
             -14},{-86,12}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaTDryBul(
     description="Outside drybulb temperature measurement",
-    y(final unit="K"))
+    y(final unit="K"),
+    customMarkers="{weather-point}")
     "Outside drybulb temperature measurement"
     annotation (Placement(transformation(extent={{-40,80},{-20,100}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaRelHum(
     description="Outside relative humidity measurement",
-    y(final unit="1"))
+    y(final unit="1"),
+    customMarkers="{weather-point}")
     "Outside relative humidity measurement"
     annotation (Placement(transformation(extent={{-40,50},{-20,70}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaWinSpe(
     description="Wind speed measurement",
-    y(final unit="m/s"))
+    y(final unit="m/s"),
+    customMarkers="{weather-point}")
     "Wind speed measurement"
     annotation (Placement(transformation(extent={{-40,20},{-20,40}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaWinDir(
     description="Wind direction measurement",
-    y(final unit="rad"))
+    y(final unit="rad"),
+    customMarkers="{weather-point}")
     "Wind direction measurement"
     annotation (Placement(transformation(extent={{-40,-10},{-20,10}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaHGloHor(
     description="Global horizontal solar irradiation measurement",
-    y(final unit="W/m2"))
+    y(final unit="W/m2"),
+    customMarkers="{weather-point}")
     "Global horizontal solar irradiation measurement"
     annotation (Placement(transformation(extent={{-40,-40},{-20,-20}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaNTot(
     description="Sky cover measurement",
-    y(final unit="1"))
+    y(final unit="1"),
+    customMarkers="{weather-point}")
     "Sky cover measurement"
     annotation (Placement(transformation(extent={{-40,-70},{-20,-50}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaPAtm(
     description="Atmospheric pressure measurement",
-    y(final unit="Pa"))
+    y(final unit="Pa"),
+    customMarkers="{weather-point}")
     "Atmospheric pressure measurement"
     annotation (Placement(transformation(extent={{-40,-100},{-20,-80}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaHDifHor(
     description="Horizontal diffuse solar radiation measurement",
-    y(final unit="W/m2"))
+    y(final unit="W/m2"),
+    customMarkers="{weather-point}")
     "Horizontal diffuse solar radiation measurement"
     annotation (Placement(transformation(extent={{0,80},{20,100}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaCeiHei(
     description="Cloud cover ceiling height measurement",
-    y(final unit="m"))
+    y(final unit="m"),
+    customMarkers="{weather-point}")
     "Cloud cover ceiling height measurement"
     annotation (Placement(transformation(extent={{0,-100},{20,-80}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaTWetBul(
     description="Wet bulb temperature measurement",
-    y(final unit="K"))
+    y(final unit="K"),
+    customMarkers="{weather-point}")
     "Wet bulb temperature measurement"
     annotation (Placement(transformation(extent={{0,-70},{20,-50}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaTDewPoi(
     description="Dew point temperature measurement",
-    y(final unit="K"))
+    y(final unit="K"),
+    customMarkers="{weather-point}")
     "Dew point temperature measurement"
     annotation (Placement(transformation(extent={{0,-40},{20,-20}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaTBlaSky(
     description="Black-body sky temperature measurement",
-    y(final unit="K"))
+    y(final unit="K"),
+    customMarkers="{weather-point}")
     "Black-body sky temperature measurement"
     annotation (Placement(transformation(extent={{0,-10},{20,10}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaHHorIR(
     description="Horizontal infrared irradiation measurement",
-    y(final unit="W/m2"))
+    y(final unit="W/m2"),
+    customMarkers="{weather-point}")
     "Horizontal infrared irradiation measurement"
     annotation (Placement(transformation(extent={{0,20},{20,40}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaHDirNor(
     description="Direct normal radiation measurement",
-    y(final unit="W/m2"))
+    y(final unit="W/m2"),
+    customMarkers="{weather-point}")
     "Direct normal radiation measurement"
     annotation (Placement(transformation(extent={{0,50},{20,70}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaCloTim(
     description="Day number with units of seconds",
-    y(final unit="s"))
+    y(final unit="s"),
+    customMarkers="{weather-point}")
     "Day number with units of seconds"
     annotation (Placement(transformation(extent={{40,80},{60,100}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaSolAlt(
     description="Solar altitude angle measurement",
-    y(final unit="rad"))
+    y(final unit="rad"),
+    customMarkers="{weather-point}")
     "Solar altitude angle measurement"
     annotation (Placement(transformation(extent={{40,-40},{60,-20}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaNOpa(
     description="Opaque sky cover measurement",
-    y(final unit="1"))
+    y(final unit="1"),
+    customMarkers="{weather-point}")
     "Opaque sky cover measurement"
     annotation (Placement(transformation(extent={{40,-10},{60,10}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaLat(
     description="Latitude of the location",
-    y(final unit="rad"))
+    y(final unit="rad"),
+    customMarkers="{weather-point}")
     "Latitude of the location"
     annotation (Placement(transformation(extent={{40,50},{60,70}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaLon(
     description="Longitude of the location",
-    y(final unit="rad"))
+    y(final unit="rad"),
+    customMarkers="{weather-point}")
     "Longitude of the location"
     annotation (Placement(transformation(extent={{40,20},{60,40}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaSolDec(
     description="Solar declination angle measurement",
-    y(final unit="rad"))
+    y(final unit="rad"),
+    customMarkers="{weather-point}")
     "Solar declination angle measurement"
     annotation (Placement(transformation(extent={{40,-70},{60,-50}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaSolHouAng(
     description="Solar hour angle measurement",
-    y(final unit="rad"))
+    y(final unit="rad"),
+    customMarkers="{weather-point}")
     "Solar hour angle measurement"
     annotation (Placement(transformation(extent={{40,-100},{60,-80}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaSolTim(
     description="Solar time",
-    y(final unit="s"))
+    y(final unit="s"),
+    customMarkers="{weather-point}")
     "Solar time"
     annotation (Placement(transformation(extent={{80,80},{100,100}})));
   Buildings.Utilities.IO.SignalExchange.Read reaWeaSolZen(
     description="Solar zenith angle measurement",
-    y(final unit="rad"))
+    y(final unit="rad"),
+    customMarkers="{weather-point}")
     "Solar zenith angle measurement"
     annotation (Placement(transformation(extent={{80,50},{100,70}})));
 equation

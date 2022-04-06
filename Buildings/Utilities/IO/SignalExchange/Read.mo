@@ -23,6 +23,17 @@ model Read "Block that allows a signal to be read as an FMU output"
     KPIs==Buildings.Utilities.IO.SignalExchange.SignalTypes.SignalsForKPIs.RelativeHumidity or
     KPIs==Buildings.Utilities.IO.SignalExchange.SignalTypes.SignalsForKPIs.CO2Concentration)));
 
+  parameter HaystackTags.Quantity quantity = HaystackTags.Quantity.None
+    "Tag for quantity" annotation(Dialog(tab="Haystack", group="Common Markers"));
+  parameter HaystackTags.DuctSectionType ductSectionType = HaystackTags.DuctSectionType.None
+    "Tag for ductSectionType" annotation(Dialog(tab="Haystack", group="Common Markers"));
+  parameter HaystackTags.Substance substance = HaystackTags.Substance.None
+    "Tag for substance" annotation(Dialog(tab="Haystack", group="Common Markers"));
+  parameter HaystackTags.Equip equip = HaystackTags.Equip.None
+    "Tag for equip" annotation(Dialog(tab="Haystack", group="Common Markers"));
+  parameter String customMarkers = ""
+    "List of custom markers as {m1, m2, ... , mn}" annotation(Dialog(tab="Haystack", group="Custom Markers"));
+
 protected
   final parameter Boolean boptestRead = true
     "Protected parameter, used by tools to search for read block in models";
